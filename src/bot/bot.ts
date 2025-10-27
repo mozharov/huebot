@@ -14,3 +14,4 @@ composer.use(logger)
 
 composer.command('start', ctx => ctx.reply('Hello, world!'))
 composer.on('msg:text', textHandler)
+composer.on('msg:caption', textHandler)
