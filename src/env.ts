@@ -9,7 +9,7 @@ const envSchema = z.object({
   BOT_TOKEN: z.string(),
   BOT_WEBHOOK_SECRET: z.string(),
   SHUTDOWN_TIMEOUT_MS: z.coerce.number().positive().default(30000),
-  NGROK_TOKEN: z.string(),
+  NGROK_TOKEN: z.string().optional(),
 })
 
 // Parse and validate environment variables
