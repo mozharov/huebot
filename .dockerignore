@@ -1,0 +1,16 @@
+/.devcontainer
+/dist
+/node_modules
+/.git
+/.vscode
+/data
+/.github
+.prettierignore
+.prettierrc
+.dockerignore
+.gitignore
+.env*
+eslint.config.mjs
+.DS_Store
+Dockerfile
+README.md
