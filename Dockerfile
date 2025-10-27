@@ -21,6 +21,5 @@ RUN apt-get update && apt-get install -y wget && rm -rf /var/lib/apt/lists/*
 COPY --from=prod-deps /app/node_modules /app/node_modules
 COPY --from=build /app/dist /app/dist
 COPY --from=pnpm /app/package.json /app/package.json
-COPY --from=pnpm /app/drizzle /app/drizzle
 
 CMD [ "node", "dist/main" ]
